@@ -1,0 +1,275 @@
+
+/* MENGATUR SELURUH HALAMAN */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #0c7075;
+    color: #f0e9e9;
+}
+
+/* HEADER */
+header {
+    background-color: #0c7075;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 32px;
+}
+
+header p {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+/* ========================= */
+/* NAVIGASI */
+/* ========================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    width: 100%;
+    min-height: 70px;
+
+    background-color: rgb(58, 124, 161);
+    gap: 20px;
+    border-bottom: 2px solid #704b06;
+}
+
+nav a {
+    padding: 12px 25px;
+    font-weight: bold;
+    color: #f5f3f3;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background-color: #6da5c0;
+    color: white;
+}
+
+
+/* ========================= */
+/* MAIN */
+/* ========================= */
+
+main {
+    width: 90%;
+    margin: 25px auto;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+}
+
+
+/* ========================= */
+/* SIDEBAR */
+/* ========================= */
+
+aside {
+    width: 30%;
+    min-height: 500px;
+    height: 150px;
+    background-color: #6da5c0;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(131, 129, 129, 0.8);
+    position: sticky;
+    top: 195px;
+}
+
+aside h3 {
+    color: #f8f7f7;
+
+    margin-top: 0;
+
+    border-bottom: 2px solid white;
+
+    padding-bottom: 10px;
+}
+
+aside a {
+    display: block;
+
+    padding: 12px;
+
+    margin: 8px 0;
+
+    border-radius: 8px;
+
+    background-color: #294d61;
+
+    color: white;
+
+    text-decoration: none;
+}
+
+aside a:hover {
+    background-color: #0f699c;
+    color: #ffffff;
+}
+
+
+/* ========================= */
+/* CONTENT */
+/* ========================= */
+
+
+
+
+section {
+    position: relative;
+
+    width: 70%;
+    min-height: 500px;
+
+    background-color: #294c61;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(243, 241, 241, 0.8);
+}
+
+section h2 {
+    color: #f5efef;
+    font-size: 28px;
+}
+
+section p {
+    line-height: 1.7;
+}
+
+
+
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.card {
+    width: 200px;
+    flex: 0 0 200px;
+
+    background-color: #05525c;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 2px 8px rgba(248, 245, 245, 0.3);
+
+    scroll-margin-top: 190px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card p {
+    margin: 10px;
+    font-size: 16px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px;
+}
+
+
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 50px;
+
+    margin-top: 10px;
+
+    background-color: #2184b9;
+
+    color: white;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 2px;
+}
+
+
+/* ========================= */
+/* SOSMED */
+/* ========================= */
+
+.social-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.social-item img {
+    width: 45px;
+    height: 40px;
+}
+
+.ikuti {
+    margin-left: 80px;
+
+    background-color: #036b7e;
+
+    padding: 10px 25px;
+
+    border-radius: 8px;
+
+    color: white;
+}
+.top {
+    position: static;
+}
+
+.search-container{
+    text-align: right;
+}
