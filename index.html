@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keanekaragaman Kragan</title>
     <link rel="stylesheet" href="layout.css">
-    <script src="script.js"> </script>
 </head>
 
 <body>
@@ -17,12 +16,11 @@
         <p>
             Mengenal Kuliner, Wisata, dan Kearifan Lokal Kragan
         </p>
-        <div class="search-container">
-        <input type="text" id="searchInput"
-                placeholder="Ketik di sini">
 
-    <button onclick="cariData()">cari</button>
-    
+        <div class="search-container">
+            <input type="text" id="searchInput"
+                placeholder="Ketik di sini">
+            <button onclick="cariData()">Cari</button>
         </div>
     </header>
 
@@ -32,18 +30,14 @@
         <a href="#wisata">Tempat Wisata</a>
         <a href="#lokal">Kearifan Lokal</a>
     </nav>
-    
-    <!-- ========================= -->
-    <!-- MAIN -->
-    <!-- ========================= -->
 
+    <!-- MAIN -->
     <main>
 
         <!-- SIDEBAR -->
         <aside>
 
             <h3>Kuliner</h3>
-
             <a href="#rujak">Rujak Petis</a>
             <a href="#kawista">Es Sirup Kawista</a>
             <a href="#pentol">Pentol Petis</a>
@@ -51,173 +45,230 @@
 
             <h3>Tempat Wisata</h3>
             <a href="#balongan">Pantai Balongan</a>
+
             <h3>Kearifan Lokal</h3>
             <a href="#lurung">Lurung Saji</a>
 
-        </aside>
+            <!-- FORM KONTAK -->
+            <section id="kontak" class="contact-form">
+                <h3>Kontak Kami</h3>
 
+                <form id="contactForm">
+
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" name="nama"
+                            placeholder="Masukkan nama Anda" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="Masukkan email Anda" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subjek">Subjek</label>
+                        <input type="text" id="subjek" name="subjek"
+                            placeholder="Subjek pesan" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" name="pesan"
+                            placeholder="Tuliskan pesan Anda..."
+                            rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" id="sendButton">
+                        Kirim Pesan
+                    </button>
+
+                </form>
+            </section>
+
+        </aside>
 
         <!-- KONTEN UTAMA -->
         <section class="content-menu">
-           
-                <h2>Mari cari tahu keanekaragaman KRAGAN</h2>
 
-                <p>
-                    Jelajahi keanekaragaman Kragan, Rembang, mulai dari kuliner
-                     khas yang menggugah selera, tempat wisata dengan keindahan alamnya, hingga 
-                    kearifan lokal dan tradisi masyarakat yang masih terus dilestarikan.
-                </p>
-                
-                <div class="card-container">  
+            <h2>Mari cari tahu keanekaragaman KRAGAN</h2>
 
-                    <div class="card">
-                        <img src="Screenshot 2026-09-02 193931.png" alt="Kuliner Kragan">
-                        <h3>Kuliner Kragan</h3>
-                        <p>ini adalah kuliner kuliner dari kragan.</p>
-                        <button class="btn-detail"><a href="#kuliner">selengkapnya></a></button>
-                    </div>
-               
+            <p>
+                Jelajahi keanekaragaman Kragan, Rembang, mulai dari kuliner
+                khas yang menggugah selera, tempat wisata dengan keindahan
+                alamnya, hingga kearifan lokal dan tradisi masyarakat
+                yang masih terus dilestarikan.
+            </p>
 
-                    <div class="card">
-                        <img src="Screenshot 2026-09-02 223626.png" alt="Wisata Kragan">
-                        <h3>Wisata Kragan</h3>
-                        <p>ini adalh Wisata dari kragan.</p>
-                        <button class="btn-detail"><a href="#kuliner">selengkapnya></a></button>
-                    </div>
+            <!-- CARD UTAMA -->
+            <div class="card-container">
 
-                    <div class="card">
-                        <img src="Screenshot 2026-09-02 225253.png" alt="Kearifan Kragan">
-                        <h3>Kearifan Kragan</h3>
-                        <p>ini adalah kearifan lokal dari kragan.</p>
-                        <button class="btn-detail"><a href="#kuliner">selengkapnya></a></button>
-                    </div>
+                <div class="card">
+                    <img src="Screenshot 2026-09-02 193931.png"
+                        alt="Kuliner Kragan">
+                    <h3>Kuliner Kragan</h3>
+                    <p>Ini adalah kuliner-kuliner dari Kragan.</p>
+                    <a href="#kuliner" class="btn-detail">
+                        Selengkapnya →
+                    </a>
                 </div>
 
-                
-            
+                <div class="card">
+                    <img src="Screenshot 2026-09-02 223626.png"
+                        alt="Wisata Kragan">
+                    <h3>Wisata Kragan</h3>
+                    <p>Ini adalah wisata dari Kragan.</p>
+                    <a href="#wisata" class="btn-detail">
+                        Selengkapnya →
+                    </a>
+                </div>
 
-                <!-- ========================= -->
-                <!-- KULINER -->
-                <!-- ========================= -->
+                <div class="card">
+                    <img src="Screenshot 2026-09-02 225253.png"
+                        alt="Kearifan Kragan">
+                    <h3>Kearifan Kragan</h3>
+                    <p>Ini adalah kearifan lokal dari Kragan.</p>
+                    <a href="#lokal" class="btn-detail">
+                        Selengkapnya →
+                    </a>
+                </div>
 
-                 
-                
-<div id="kuliner" class="kategori">
+            </div>
 
-    <h2>Kuliner Kragan</h2>
+            <!-- ========================= -->
+            <!-- KULINER -->
+            <!-- ========================= -->
 
-    <div class="card-container">
+            <div id="kuliner" class="kategori">
 
-        <div class="card" id="rujak">
-            <img src="Screenshot 2026-09-02 193931.png">
-            <h3>Rujak Petis</h3>
-            <p>Rujak petis adalah kuliner khas Kragan.</p>
-        </div>
+                <h2>Kuliner Kragan</h2>
 
-        <div class="card" id="kawista">
-            <img src="Screenshot 2026-09-02 194456.png">
-            <h3>Es Sirup Kawista</h3>
-            <p>Minuman khas Kragan yang menyegarkan.</p>
-        </div>
+                <div class="card-container">
 
-        <div class="card" id="pentol">
-            <img src="Screenshot 2026-09-02 194807.png">
-            <h3>Pentol Petis</h3>
-            <p>Kuliner khas dengan rasa gurih dan pedas.</p>
-        </div>
+                    <div class="card" id="rujak">
+                        <img src="Screenshot 2026-09-02 193931.png"
+                            alt="Rujak Petis">
+                        <h3>Rujak Petis</h3>
+                        <p>Rujak petis adalah kuliner khas Kragan.</p>
+                        <button class="btn-detail"
+                           data-kategori="Kuliner Khas Kragan"
+                             onclick="bukaModalDariCard(this)">
+                           Selengkapnya →
+                            </button>
+                    </div>
 
-        <div class="card" id="iwak">
-            <img src="Screenshot 2026-09-02 222745.png">
-            <h3>Iwak Panggang</h3>
-            <p>Ikan panggang khas Kragan yang lezat.</p>
-        </div>
+                    <div class="card" id="kawista">
+                        <img src="Screenshot 2026-09-02 194456.png"
+                            alt="Es Sirup Kawista">
+                        <h3>Es Sirup Kawista</h3>
+                        <p>Minuman khas Kragan yang menyegarkan.</p>
+                       <button class="btn-detail"
+                     data-kategori="Minuman Khas Kragan"
+                     onclick="bukaModalDariCard(this)">
+                     Selengkapnya →
+                    </button>
+                    </div>
 
-    </div>
-</div>
+                    <div class="card" id="pentol">
+                        <img src="Screenshot 2026-09-02 194807.png"
+                            alt="Pentol Petis">
+                        <h3>Pentol Petis</h3>
+                        <p>Kuliner khas dengan rasa gurih dan pedas.</p>
+                        <button class="btn-detail"
+                           data-kategori="Kuliner Khas Kragan"
+                             onclick="bukaModalDariCard(this)">
+                           Selengkapnya →
+                            </button>
+                    </div>
 
-
-                <!-- ========================= -->
-                <!-- TEMPAT WISATA -->
-                <!-- ========================= -->
-
-                <div id="wisata" class="kategori">
-
-                    <h2>Tempat Wisata Kragan</h2>
-
-                    <div class="card-container">
-
-
-                        <!-- PANTAI BALONGAN -->
-
-                        <div class="card" id="balongan">
-
-                            <img src="Screenshot 2026-09-02 223626.png"
-                                 alt="Pantai Balongan">
-
-                            <h3>Pantai Balongan</h3>
-
-                            <p>
-                                Pantai Balongan adalah salah satu
-                                destinasi wisata populer di Kragan
-                                yang menawarkan pemandangan alam
-                                yang indah.
-                            </p>
-                            
-                        </div>
-
+                    <div class="card" id="iwak">
+                        <img src="Screenshot 2026-09-02 222745.png"
+                            alt="Iwak Panggang">
+                        <h3>Iwak Panggang</h3>
+                        <p>Ikan panggang khas Kragan yang lezat.</p>
+                         <button class="btn-detail"
+                           data-kategori="Kuliner Khas Kragan"
+                             onclick="bukaModalDariCard(this)">
+                           Selengkapnya →
+                            </button>
                     </div>
 
                 </div>
+            </div>
 
+            <!-- ========================= -->
+            <!-- TEMPAT WISATA -->
+            <!-- ========================= -->
 
-                <!-- ========================= -->
-                <!-- KEARIFAN LOKAL -->
-                <!-- ========================= -->
+            <div id="wisata" class="kategori">
 
-                <div id="lokal" class="kategori">
+                <h2>Tempat Wisata Kragan</h2>
 
-                    <h2>Kearifan Lokal Kragan</h2>
+                <div class="card-container">
 
-                    <div class="card-container">
+                    <div class="card" id="balongan">
+                        <img src="Screenshot 2026-09-02 223626.png"
+                            alt="Pantai Balongan">
 
+                        <h3>Pantai Balongan</h3>
 
-                        <!-- LURUNG SAJI -->
+                        <p>
+                            Pantai Balongan adalah salah satu destinasi
+                            wisata populer di Kragan yang menawarkan
+                            pemandangan alam yang indah.
+                        </p>
 
-                        <div class="card" id="lurung">
-
-                            <img src="Screenshot 2026-09-02 225253.png"
-                                 alt="Lurung Saji Karang Harjo">
-
-                            <h3>Lurung Saji Karang Harjo</h3>
-
-                            <p>
-                                Tradisi tahunan masyarakat pesisir
-                                dan nelayan setempat sebagai wujud
-                                rasa syukur kepada Tuhan atas
-                                limpahan hasil tangkapan laut.
-                            </p>
-                             
-                        </div>
-
+                        <button class="btn-detail"
+                      data-kategori="Tempat Wisata Kragan"
+                        onclick="bukaModalDariCard(this)">
+                         Selengkapnya →
+                        </button>
                     </div>
 
                 </div>
+            </div>
 
+            <!-- ========================= -->
+            <!-- KEARIFAN LOKAL -->
+            <!-- ========================= -->
+
+            <div id="lokal" class="kategori">
+
+                <h2>Kearifan Lokal Kragan</h2>
+
+                <div class="card-container">
+
+                    <div class="card" id="lurung">
+                        <img src="Screenshot 2026-09-02 225253.png"
+                            alt="Lurung Saji Karang Harjo">
+
+                        <h3>Lurung Saji Karang Harjo</h3>
+
+                        <p>
+                            Tradisi tahunan masyarakat pesisir dan nelayan
+                            setempat sebagai wujud rasa syukur kepada Tuhan
+                            atas limpahan hasil tangkapan laut.
+                        </p>
+
+                       <button class="btn-detail"
+                      data-kategori="Kearifan Lokal Kragan"
+                     onclick="bukaModalDariCard(this)">
+                      Selengkapnya →
+                    </button>
+                    </div>
+
+                </div>
             </div>
 
         </section>
 
     </main>
 
-
-    <!-- ========================= -->
     <!-- FOOTER -->
-    <!-- ========================= -->
-
     <footer>
 
         <div class="footer-content">
-
             <h3>Keanekaragaman Kragan</h3>
 
             <p>
@@ -227,16 +278,11 @@
             <p>
                 © 2026 Kragan Rembang Jawa Tengah
             </p>
-
         </div>
-
 
         <div class="ikuti">
-
             <p>Ikuti sosmed kami 👉</p>
-
         </div>
-
 
         <div class="social-item">
 
@@ -245,12 +291,10 @@
                 <img src="yutube.png" alt="Youtube">
             </a>
 
-
             <a href="https://www.instagram.com/ahmadmiftakhuluyun/">
                 <p>Instagram</p>
                 <img src="instagram.png" alt="Instagram">
             </a>
-
 
             <a href="https://www.tiktok.com/@ahmadmiftakhuluyun">
                 <p>Tiktok</p>
@@ -260,7 +304,37 @@
         </div>
 
     </footer>
+    
+<!-- POPUP UNIVERSAL -->
+<div id="detailModal" class="modal">
+
+    <div class="modal-content">
+
+        <button class="close-btn" onclick="tutupModal()">
+            &times;
+        </button>
+
+        <h2 id="modalTitle">Judul</h2>
+
+        <img id="modalImage" src="" alt="Gambar detail">
+
+        <h3 id="modalCategory">Kategori</h3>
+
+        <p id="modalDescription"></p>
+
+        <button class="btn-tutup" onclick="tutupModal()">
+            Tutup
+        </button>
+
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+
 
 </body>
-
 </html>
+
+ 
+
